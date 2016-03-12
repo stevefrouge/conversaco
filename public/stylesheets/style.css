@@ -93,23 +93,27 @@ a {
 }
 .block
 {
-    margin-left: 10%;
     min-height: 400px;
     margin-bottom: 100px;
+    margin-left: 3%;
 }
 .colorblock
 {
-  
     position: relative;
     min-height: 500px;
-    margin-left: 10%;
 }
 .blockhead
 { 
     position: absolute;  
     top: 50px;  
-    left: -5%;
-    font-size: xx-large;
+    left: -3%;
+    max-width: 200px;
+    font-size: 3.2vh;
+    font-weight: bold;
+  
+}
+.firstrow{
+     margin-top: -1000px;
 }
 .blue{
     background-color: #00ABEC;
@@ -127,3 +131,40 @@ a {
     left: 10%;
     width: 90%;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .blockhead  {
+      color: red;
+    }
+    
+}
+@media (min-width: 0px) and (max-width: 849px) {
+   .blockhead {
+      color: green;
+    }
+   .columnmenu{
+       display: none;
+   }
+  }
+
+@media (min-width: 850px) and (max-width: 1300px) {
+    .blockhead {
+      color: fuchsia;
+    }
+    .firstrow{
+        padding-top: 100px;
+         margin-top: 0px;
+    }
+    .block
+    {
+      
+        margin-left: 10%;
+    }
+    .blockhead
+{     
+    left: -5%;  
+}
+    .desc:after {
+      content:" In fact, it's between 500px and 600px wide.";
+    }
+  }

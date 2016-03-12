@@ -3,29 +3,35 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
   body
     .headerwrapper
         .midground
         .foreground
         .logo
         .yellow
-        .dots
-        .menu
-            ul
-                 li 
-                    .menuitem Home
-                 li 
-                    .menuitem About / Services
-                 li 
-                    .menuitem Work
-                 li 
-                    .menuitem Team
-                 li 
-                    .menuitem Clients
-                 li 
-                    .menuitem News
-                 li 
-                    .menuitem Let's Talk
-                     
-    .wrapper    
-        block content
+        .dots                    
+    .wrapper.container-fluid
+        .row.firstrow
+            .col-md-2.columnmenu
+                .menu
+                    ul
+                        li 
+                            .menuitem Home
+                        li 
+                            .menuitem About / Services
+                        li 
+                            .menuitem Work
+                        li 
+                            .menuitem Team
+                        li 
+                            .menuitem Clients
+                        li 
+                            .menuitem News
+                        li 
+                            .menuitem Let's Talk
+            
+            .col-md-10(style='padding-right: 0px; padding-left: 0px;')  
+                block content
