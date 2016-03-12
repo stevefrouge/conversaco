@@ -1,8 +1,129 @@
+@font-face {
+     font-family: Aller;
+     src: url(/fonts/Aller_Bd.ttf);
+ }
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;   */ 
+    font-family: Aller;
+    background: 
+        url(/images/header/1.png) center center no-repeat fixed;      
+    background-size: 50%;
+
 }
 
+.midground {
+	width: 90%;
+    height: 100%;
+    margin-left: 10%;   
+    top: -100px;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+    background: url(/images/header/5.png) 5% 50% no-repeat;
+    background-size: cover;
+
+}
+.foreground {
+    width: 90%;
+    height: 100%; 
+    margin-left: 10%;  
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+	background: url(/images/header/6.png) 95% 90% no-repeat;
+    background-size: cover;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: -1;
+    background: url(/images/header/4.png) 90% 10% no-repeat fixed;
+    background-size: 20%;
+    margin-right: 150px;
+}
+.yellow {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    background: url(/images/header/3.png) -3% 10% no-repeat fixed;
+    background-size: 20%;
+}
+
+.dots {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    background: url(/images/header/2.png) 100% 100% no-repeat fixed;
+    background-size: 30%;
+}
+.menu {
+    font-size: xx-large;
+    position: fixed;
+    top: 35%;
+    margin-left: 2%;
+}
+.menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+    padding: 5px;
+}
+.menuitem{
+    max-width: 200px;
+}
 a {
   color: #00B7FF;
+}
+.wrapper
+{
+    position: relative;
+    margin-top: 100%;
+}
+.block
+{
+    margin-left: 10%;
+    min-height: 400px;
+    margin-bottom: 100px;
+}
+.colorblock
+{
+  
+    position: relative;
+    min-height: 500px;
+    margin-left: 10%;
+}
+.blockhead
+{ 
+    position: absolute;  
+    top: 50px;  
+    left: -5%;
+    font-size: xx-large;
+}
+.blue{
+    background-color: #00ABEC;
+    
+}
+.pink{
+    background-color: #E90089;
+}
+.innerblock
+{ 
+    position: absolute;    
+    height: 80%;    
+    background-color: white;
+    top: 40px;
+    left: 10%;
+    width: 90%;
 }
