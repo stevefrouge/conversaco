@@ -2,7 +2,20 @@
      font-family: Aller;
      src: url(/fonts/Aller_Bd.ttf);
  }
-
+.headerwrapper{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+.wrapper {
+    
+    margin-top: 0px !important;
+}
 body {
     padding: 0px;
     margin: 0px;
@@ -11,13 +24,14 @@ body {
     background: 
         url(/images/header/1.png) center center no-repeat fixed;      
     background-size: 50%;
-
+    width: 100%;
+    height: 100%;
 }
 
 .midground {
-	width: 90%;
+	width: 87%;
     height: 100%;
-    margin-left: 10%;   
+    margin-left: 13%;   
     top: -100px;
     left: 0;
     position: absolute;
@@ -27,9 +41,9 @@ body {
 
 }
 .foreground {
-    width: 90%;
+    width: 87%;
     height: 100%; 
-    margin-left: 10%;  
+    margin-left: 13%;  
     top: 0;
     left: 0;
     position: absolute;
@@ -53,10 +67,10 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     background: url(/images/header/3.png) -3% 10% no-repeat fixed;
-    background-size: 20%;
+    background-size: 15%;
 }
 
 .dots {
@@ -64,16 +78,17 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     background: url(/images/header/2.png) 100% 100% no-repeat fixed;
     background-size: 30%;
 }
+
 .menu {
     font-size: xx-large;
     position: fixed;
     top: 35%;
-    margin-left: 2%;
+    margin-left: .5%;
 }
 .menu ul li {
     list-style-type: none;
@@ -91,29 +106,80 @@ a {
     position: relative;
     margin-top: 100%;
 }
+.newinnerblock{
+    background:White;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.newinnerblock:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.newblock{
+   
+     
+    border-left: 180px solid;
+    border-top: 40px solid;
+    border-bottom: 40px solid;
+    margin-bottom: 100px;
+    margin-left: 3%;
+    position: relative;
+    background-color: White;
+}
+
 .block
 {
-    min-height: 400px;
+    /*min-height: 400px;*/
     margin-bottom: 100px;
     margin-left: 3%;
 }
 .colorblock
 {
     position: relative;
-    min-height: 500px;
+    min-height: 490px;
 }
 .blockhead
 { 
     position: absolute;  
-    top: 50px;  
-    left: -3%;
+    top: 20px;  
+    left: -230px;
     max-width: 200px;
-    font-size: 3.2vh;
-    font-weight: bold;
-  
+    font-size: 5vh;
+    font-weight: bold;      
+}
+.stripe{
+    background: url(/images/graystrip.png) center center repeat;
+    position: absolute;
+    top: 75%;
+    left: -230px;
+    /* max-width: 200px; */
+    width: 250px;
+    height: 100px;
 }
 .firstrow{
-     margin-top: -500px;
+     
+}
+.border{
+    border: 1px solid;
+}
+.noborder{
+    border: 0px solid;
+}
+.blueborder{
+    border-color: #00ABEC;
+}
+.pinkborder{
+     border-color: #E90089;
+}
+.grayborder{
+     border-color: gray;
+}
+.yellowborder{
+    border-color: #FFD900;
 }
 .blue{
     background-color: #00ABEC;
@@ -131,7 +197,37 @@ a {
     left: 10%;
     width: 90%;
 }
-
+.innerleft{
+    float: left;
+    width : 50%;
+    height: 100%;      
+    right: 0;
+    top: 0;    
+}
+.innerright{
+    float: right;
+    width : 50%;
+    height: 100%;      
+    right: 0;
+    top: 0;
+}
+.innerright img{   
+    height: 100%;
+    float: right;
+    max-width: 100%;
+}
+.textblock{
+    padding: 10%;
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: large;
+}
+.bottomlink a{
+     font-weight: bold;
+     font-size: 2vh;
+     padding-left: 10%;
+     color: black;
+}
 @media only screen and (max-device-width: 480px) {
     .blockhead  {
       color: red;
@@ -151,20 +247,92 @@ a {
     .blockhead {
       color: fuchsia;
     }
-    .firstrow{
-        padding-top: 100px;
-         margin-top: 0px;
+    .columnmenu{
+       display: none;
+   }
+   .blockhead
+    {       
+    left: -200px;         
     }
+   .col-md-10{
+      width: 100% !important;
+   }
+  
     .block
     {
       
         margin-left: 10%;
-    }
-    .blockhead
-{     
-    left: -5%;  
-}
+    }    
     .desc:after {
       content:" In fact, it's between 500px and 600px wide.";
     }
   }
+  
+  @media only screen and (max-device-width: 480px) {
+   .columnmenu{
+       display: none;
+   }
+   .blockhead
+    { 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-width: 500px;
+        font-size: 2vh;        
+    }
+  .col-md-10{
+      width: 100% !important;
+   }
+.newblock{          
+        
+    border-left: 50px solid;
+    border-top: 25px solid;
+    border-bottom: 25px solid;            
+}
+.blueborder{
+    border-color: #00ABEC;
+}
+.pinkborder{
+     border-color: #E90089;
+}
+.grayborder{
+     border-color: gray;
+}
+.yellowborder{
+    border-color: #FFD900;
+}
+    
+.innerright img{
+        
+ 
+    
+}
+.midground {
+	width: 100%;
+    height: 100%;
+    margin-left: 0;   
+    top: -400px;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+    background: url(/images/header/5.png) 10% 0 repeat;
+    background-size: cover;
+
+}
+.foreground {
+    width: 100%;
+    height: 100%; 
+    margin-left: 0;  
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+	background: url(/images/header/6.png) -90% 0 repeat;
+    background-size: cover;
+}
+.logo {
+   
+    background-size: 50%;
+  
+}
+}

@@ -5,7 +5,10 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css')
+    script(src="http://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous")
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='/javascripts/script.js')
+    
   body
     .headerwrapper
         .midground
@@ -18,13 +21,13 @@ html
             .col-md-2.columnmenu
                 .menu
                     ul
-                        li 
+                        li(id='menuHome' class='border grayborder') 
                             .menuitem Home
-                        li 
+                        li(id='menuAbout' class='noborder blueborder')
                             .menuitem About / Services
-                        li 
+                        li(id='menuWork' class='noborder pinkborder')
                             .menuitem Work
-                        li 
+                        li(id='menuTeam' class='noborder yellowborder') 
                             .menuitem Team
                         li 
                             .menuitem Clients

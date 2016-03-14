@@ -1,13 +1,31 @@
 extends layout
 
-block content
-  
-  .block
-    .colorblock.blue
-       .innerblock Content HEre
-       .blockhead About / Services
-  .block
-    .colorblock.pink
-       .innerblock Content HEre
-       .blockhead Work
-       
+block content    
+  .newblock.blueborder(id='divAbout')      
+    .innerleft
+       .textblock  At Conversa, we practice a forward-thinking approach to integrated communication, advocacy, multicultural marketing, and design. We’ve helped Fortune 500 clients, national non-profits, and small businesses define messages, protect interests, influence opinion leaders, and create the conditions necessary for social change. We strive to provide unmatched service to our clients; in fact, our partners work every account delivering the expertise and access expected.<br /><br />Our brand promise is uncomplicated, but effective – build relationships, execute tailored tactics, and deliver results.
+       .bottomlink
+                a OUR SERVICES                 
+    .innerright
+            img(src='images/womenkeyboard.png')
+    .clear(style='clear: both;')
+    .blockhead About / Services
+    .stripe 
+  .newblock.pinkborder(id='divWork')
+    .innercontent Stuff here    
+    .clear(style='clear: both;')
+    .blockhead Work
+  .newblock.yellowborder(id='divTeam')
+    .innerleft
+       .textblock Our team is built on a foundation of dedication, loyalty, and trust. Collectively, we boast more nearly five decades of experience in public affairs, marketing, public relations, political campaigns, and policy development. Our team is also proficient in design, which enhances our ability to develop multifaceted campaigns that incorporate both digital and print elements to showcase the full spectrum of a brand's potential.  
+       .bottomlink
+                a MEET THE TEAM                 
+    .innerright
+            img(src='images/team.png')
+    .clear(style='clear: both;')
+    .blockhead Team
+    .stripe 
+  .newblock.grayborder(id='diClient')
+    .innercontent Stuff here    
+    .clear(style='clear: both;')
+    .blockhead Clients
