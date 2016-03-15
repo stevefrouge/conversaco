@@ -193,13 +193,12 @@ a {
     margin-bottom: 10px !important;
 }
 .workslider{
-    border: 5px solid #E90089 !important; 
-    
+    border: 5px solid #E90089 !important;     
     height: 100px;
 }
 .workcontent{
     background-color: transparent;
-    border: none;
+    border: none !important;
     margin-bottom: 10px !important;
 }
 .workrow{
@@ -282,6 +281,8 @@ a {
 @media only screen and (max-device-width: 480px) {
     .blockhead  {
       color: red;
+       top: -10px;
+       left: -70px;
     }
     
 }
@@ -318,14 +319,12 @@ a {
 @media (min-width: 850px) and (max-width: 1300px) {
     .blockhead {
       color: fuchsia;
+      top: -10px;
+      left: -70px;
     }
     .columnmenu{
        display: none;
-   }
-   .blockhead
-    {       
-    left: -200px;         
-    }
+   }  
    .col-md-10{
       width: 100% !important;
    }
@@ -367,9 +366,7 @@ a {
    }
    .blockhead
     { 
-        position: absolute;
-        top: 0px;
-        left: 0px;
+        position: absolute;       
         max-width: 500px;
         font-size: 2vh;        
     }
