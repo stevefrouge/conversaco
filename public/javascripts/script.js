@@ -1,5 +1,9 @@
+
+new WOW().init();
+
 $(document).ready(function(){
     $(".headerwrapper").height( $(".yellow").height() );
+    
 });
 
 
@@ -16,6 +20,7 @@ $(window).scroll(function(){
     if (y >= aboutNumber && y < workNumber){
         clearMenuClass();
         addBorder("#menuAbout")
+              
       // Do stuff, like append a class to an element
     }
     if (y >= workNumber && y < teamNumber){
