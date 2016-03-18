@@ -12,6 +12,22 @@
     background-attachment: fixed;
     
 }
+/*==========  NAV  ==========*/
+nav {
+   
+    background-color: White; 
+     color: Black;  
+     padding-left: 20px;
+     padding-right: 20px;
+     display: none;
+}
+nav ul a {
+   
+    color: Black;
+    
+}
+
+/*==========  NAV  ==========*/
 .wrapper {
     
     margin-top: 0px !important;
@@ -28,6 +44,12 @@ body {
     height: 100%;
 }
 
+    .parallax-container {
+      height: 100%;
+      margin-left: 13%;  
+      margin-top: -350px;
+    }
+        
 .midground {
 	width: 87%;
     height: 100%;
@@ -62,7 +84,7 @@ body {
     background-size: 20%;
     margin-right: 150px;
 }
-.yellow {
+.yellowstrips {
     width: 100%;
     height: 100%;
     top: 0px;
@@ -320,8 +342,22 @@ a {
     .blockhead {
       color: fuchsia;
       top: -10px;
-      left: -70px;
+      left: -200px;
     }
+            
+.parallax-container {
+	width: 100%;
+    height: 100%;
+    /* margin-left: -200px; */
+    top: 300px;
+    /* left: -500px; */
+    position: absolute;
+    z-index: -10;
+    background: url(/images/header/5.png) 20% 80% no-repeat;
+    background-size: cover;
+
+}
+    
     .columnmenu{
        display: none;
    }  
@@ -368,7 +404,8 @@ a {
     { 
         position: absolute;       
         max-width: 500px;
-        font-size: 2vh;        
+        font-size: 2vh; 
+        left: -30px;       
     }
   .col-md-10{
       width: 100% !important;
@@ -427,3 +464,33 @@ a {
 }
 }
 
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+       
+    }
+    
+    
+        
+}
